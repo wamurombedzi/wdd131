@@ -1,4 +1,3 @@
-//footer information
 const currentYear = new Date().getFullYear();
 const lastModified = document.lastModified;
 const copyrightYearElement = document.getElementById('currentyear');

@@ -94,7 +94,7 @@ p {
     grid-template-rows: auto auto;
 }
 
-.flag {
+.flag1 {
     width: 150px;
     grid-column: 1;
     grid-row: 2;
