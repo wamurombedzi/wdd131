@@ -1,0 +1,24 @@
+@media (min-width: 840px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 1.5rem;
+    }
+
+    .navigation {
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+
+    .navigation a {
+        display: block;
+        padding: 1rem;
+        flex: 1 1 100%;
+    }
+
+    #menu {
+        display: none;
+    }
+    
+}

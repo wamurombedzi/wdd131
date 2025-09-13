@@ -1,0 +1,143 @@
+:root {
+    --primary--color: #020c1a;
+    --secondary--color: #778da9ca;
+    --accent1--color: #d13035;
+    --accent2--color: #f4f7fa;
+    --accent3--color: #1a6dd8;
+    
+    --poppins-regular: "Poppins", sans-serif;
+    --poppins-regular-weight: 900;
+    --poppins-thin-weight: 100;
+    --poppins-thin: "Poppins", sans-serif;
+}
+
+/* general */
+* {
+    margin: 0;
+    padding: 0.25rem;
+}
+
+body {
+    font-family: var(--poppins-regular);
+    font-weight: var(--poppins-regular-weight);
+    margin: 0 auto;
+    padding: 0;
+    max-width: 840px;
+}
+
+h1,
+h2 {
+    font-family: var(--primary--color);
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+p {
+    font-family: var(--accent1--color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--secondary--color);
+    color: var(--accent2--color);
+    padding: 10px;
+    max-width: 800px;
+}
+
+#menu {
+    font-size: 2rem;
+    border: 0;background-color: var(--accent2--color);
+    color: var(--accent3--color);
+    position: absolute;
+    top: 1.2rem;
+    right: 1rem;
+}
+
+#menu.open::before {
+    content: "❎";
+}
+
+#menu::before {
+    content: "≡";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--primary--color);
+    width: 100%;
+}
+
+.navigation a:hover {
+    color: var(--accent1--color);
+    text-decoration: underline 2px solid var(--accent3--color);
+    transition: all 5ms ease-in-out;
+}
+
+.open a {
+    display: block;
+    font-size: 1.5rem;
+}
+
+.hidden {
+    display: none;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 840px;
+}
+
+.home {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 25px;
+    margin: 5px 20px;
+    text-align: center;
+}
+
+figure {
+    background-color: var(--secondary--color);
+    border-style: double;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+figcaption {
+    font-size: medium;
+    text-align: center;
+}
+
+footer {
+    background-color: var(--secondary--color);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
